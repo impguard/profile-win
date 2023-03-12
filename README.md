@@ -20,7 +20,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
 # Download Profile Repo
-iex (iwr -URI 'https://raw.githubusercontent.com/impguard/profile-win/master/install')
+iex (iwr -URI 'https://raw.githubusercontent.com/impguard/profile-win/master/install.ps1')
 ```
 
 ## Run Setup

@@ -1,0 +1,3 @@
+[submodule "profile-linux"]
+	path = profile-linux
+	url = git@github.com:impguard/profile.git
