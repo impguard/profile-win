@@ -1,5 +1,5 @@
-$name  = Read-Host "Github Name : "
-$email = Read-Host "Github Email: "
+$name  = Read-Host "Github Name"
+$email = Read-Host "Github Email"
 
 
 git config --global user.name "$name"
