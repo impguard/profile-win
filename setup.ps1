@@ -18,11 +18,12 @@ function Log {
 
 function Stage {
   $Source = $PROFILE_DIR.Replace("\", "\\")
-
   $Items = Get-ChildItem -LiteralPath $Source -Recurse
 
-  Write-Output $Source
-  Write-Output $Items
+  foreach ($Item in $Items)
+  {
+    Write-Output $Item
+  }
 }
 
 ########################################
