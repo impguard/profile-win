@@ -17,13 +17,7 @@ function Log {
 }
 
 function Stage {
-  $Source = $PROFILE_DIR.Replace("\", "\\")
-  $Items = Get-ChildItem -LiteralPath $Source -Recurse
-
-  foreach ($Item in $Items)
-  {
-    Write-Output $Item
-  }
+  New-Item -Path $STAGING_DIR -ItemType SymbolicLink -Value $PROFILE_DIR -Force
 }
 
 ########################################
