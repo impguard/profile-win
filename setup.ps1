@@ -22,7 +22,7 @@ function Stage {
   $Items = Get-ChildItem -LiteralPath $Source -Recurse
 
   Write-Output $Source
-  # Write-Output $Items
+  Write-Output $Items
 }
 
 ########################################
